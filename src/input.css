@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --font-orbitron: "orbitron";
+  --font-Roboto: "Roboto";
+  --font-oswald: "oswald";
+  --font-poppins: "poppins";
+  --font-youngserif: "young serif";
+  --color-purered: #de0913;
+  --color-silver: #61605f;
+  --color-jetblack: #252525;
+  --color-lightblack: #28282b;
+}

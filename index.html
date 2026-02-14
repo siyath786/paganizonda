@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bitcount+Grid+Double:wght@100..900&family=Mr+Dafoe&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bitcount+Grid+Double:wght@100..900&family=Manufacturing+Consent&family=Mr+Dafoe&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bitcount+Grid+Double:wght@100..900&family=Manufacturing+Consent&family=Mr+Dafoe&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bitcount+Grid+Double:wght@100..900&family=Manufacturing+Consent&family=Mr+Dafoe&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bitcount+Grid+Double:wght@100..900&family=Manufacturing+Consent&family=Mr+Dafoe&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon tag -->
+    <link rel="icon" href="img/Screenshot_20260122_093730_Chrome.jpg" />
+    <!-- title tag -->
+    <title>Pagani</title>
+  </head>
+  <body class="scroll-smooth">
+    <!-- navbar section started  -->
+    <div class="bg-black overflow-x-hidden" id="start">
+      <div
+        class="w-full fixed top-0 flex justify-center items-center bg-black/80 z-1000 pt-1"
+      >
+        <nav class="w-[95%] flex justify-between items-center p-3 md:w-[80%]">
+          <div>
+            <h2
+              class="font-orbitron text-[23px] text-amber-400 md:text-[24px] lg:text-[26px]"
+            >
+              <i class="fa-solid fa-diamond mr-1.5 text-amber-400"></i>Pagani
+            </h2>
+          </div>
+          <div>
+            <a
+              href="#"
+              class="decoration-0 text-[15px] font-orbitron bg-amber-400 p-2 rounded-2xl md:text-[17px] lg:text-[18px] hover:bg-black hover:text-amber-400 hover:border-1 hover:border-amber-400"
+              >Inquire Now</a
+            >
+          </div>
+        </nav>
+      </div>
+      <!-- navbar section completed  -->
+      <br />
+      <br />
+      <br />
+      <!-- hero section start  -->
+      <div class="mt-2">
+        <h1
+          class="font-orbitron text-white text-[25px] w-[100%] leading-15 font-bold text-center md:text-[35px] lg:text-[40px]"
+        >
+          Pagani Zonda R <span class="text-amber-400">Concept</span>
+        </h1>
+      </div>
+      <div
+        class="flex justify-center items-center gap-6 mt-5 md:gap-8 lg:gap-10 md:mt-7 lg:mt-7"
+      >
+        <a
+          href="#start"
+          class="text-[15px] font-orbitron text-white lg:text-[16px] decoration-0 hover:text-amber-400 z-100"
+          >01-Start</a
+        >
+
+        <a
+          href="#engine"
+          class="text-[15px] font-orbitron text-white lg:text-[16px] decoration-0 hover:text-amber-400 z-100"
+          >02-Engine</a
+        >
+
+        <a
+          href="#performance"
+          class="text-[15px] font-orbitron text-white lg:text-[16px] decoration-0 hover:text-amber-400 z-100"
+          >03-Performance</a
+        >
+      </div>
+      <div
+        class="w-[100%] h-[48vh] flex flex-col justify-center items-center mt-10 md:mt-5 md:h-[58vh] lg:h-[63vh]"
+      >
+        <div class="flex justify-center items-center relative">
+          <img
+            src="src/img/pngwing.com (46).webp"
+            alt=""
+            class="w-[100%] md:w-[80%] lg:w-[65%] contrast-125 drop-shadow-2xl drop-shadow-amber-400/30"
+          />
+          <div class="hidden absolute md:left-0 lg:left-35 md:block lg:block">
+            <p class="font-orbitron text-amber-400 text-[18px] md:text-[16px]">
+              THE APEX PREDATOR
+            </p>
+            <h2
+              class="font-orbitron text-white lg:text-[65px] w-[70%] leading-20 font-bold md:text-[50px] z-200"
+            >
+              Pagani Zonda <span class="text-amber-400">R</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!-- hero section completed for desktop  -->
+      <!-- ------------------------->
+      <!-- hero section started for mobile  -->
+      <div class="flex flex-col justify-center items-center">
+        <div
+          class="md:hidden lg:hidden flex flex-col justify-center items-center w-[90%]"
+        >
+          <p class="font-orbitron text-amber-400 text-[16px]">
+            THE APEX PREDATOR
+          </p>
+          <h2
+            class="font-orbitron text-white text-[50px] w-[80%] leading-15 font-bold text-center mt-1"
+          >
+            Pagani Zonda <span class="text-amber-400">R</span>
+          </h2>
+        </div>
+        <div
+          class="flex flex-col justify-center items-start w-[90%] gap-4 mt-6 ml-1 md:w-[95%] lg:mt-2"
+        >
+          <p class="text-gray-400 text-[16px] font-orbitron lg:text-[18px]">
+            A family of extreme performance car
+          </p>
+          <h3
+            class="text-white text-[18px] font-bold font-orbitron lg:text-[20px]"
+          >
+            Discover More<a href="#"
+              ><i
+                class="fa-solid fa-angle-right bg-white text-black text-[20px] px-2 py-1 rounded-[50%] ml-2 hover:bg-amber-400 hover:text-black"
+              ></i
+            ></a>
+          </h3>
+        </div>
+      </div>
+      <!-- hero section completed for mobile  -->
+
+      <!-- --------------------->
+      <!-- engine section started  -->
+      <div id="engine"></div>
+      <div
+        class="w-[100%] h-[40vh] flex flex-col justify-center items-center mt-15 md:mt-5 md:h-[70vh] lg:h-[85vh]"
+      >
+        <div
+          class="flex justify-center items-center relative md:mt-10 lg:mt-10"
+        >
+          <img
+            src="src/img/paganizondar8.jpg"
+            alt=""
+            class="w-[100%] md:w-[80%] lg:w-[100%] contrast-125 md:rounded-2xl"
+          />
+          <div class="hidden absolute md:left-0 lg:-left-50 md:block lg:block">
+            <p class="font-orbitron text-amber-400 text-[18px] md:text-[16px]">
+              DREW ON FERRARI'S F1 EXPERIENCE
+            </p>
+            <h2
+              class="font-orbitron text-white lg:text-[65px] w-[70%] leading-20 font-bold md:text-[50px] z-200"
+            >
+              Engine
+            </h2>
+          </div>
+          <div
+            class="hidden flex flex-col md:gap-10 absolute md:-right-10 md:flex lg:flex lg:gap-16 lg:-right-35"
+          >
+            <div class="flex flex-col">
+              <h2 class="text-[20px] text-white font-orbitron lg:text-[22px]">
+                V12
+              </h2>
+              <p
+                class="text-[20px] text-amber-400 font-orbitron lg:text-[22px]"
+              >
+                ENGINE
+              </p>
+            </div>
+            <div class="flex flex-col">
+              <h2 class="text-[20px] text-white font-orbitron lg:text-[22px]">
+                5987 <span class="text-amber-400"> CC</span>
+              </h2>
+              <p class="text-[20px] text-white font-orbitron lg:text-[22px]">
+                PERFORMANCE
+              </p>
+            </div>
+            <div class="flex flex-col">
+              <h2 class="text-[20px] text-white font-orbitron lg:text-[22px]">
+                375<span class="text-amber-400"> km/h</span>
+              </h2>
+              <p class="text-[20px] text-white font-orbitron lg:text-[22px]">
+                TOP SPEED
+              </p>
+            </div>
+            <div class="flex flex-col">
+              <h2 class="text-[20px] text-white font-orbitron lg:text-[22px]">
+                551<span class="text-amber-400"> KW</span>
+              </h2>
+              <p class="text-[20px] text-white font-orbitron lg:text-[22px]">
+                MAX POWER
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- engine section completed for desktop  -->
+      <!-- -------------------------->
+      <!-- engine section started for mobile  -->
+      <div class="flex flex-col justify-center gap-5 items-center">
+        <div
+          class="grid grid-cols-2 gap-5 place-content-center place-items-center w-[100%] z-200 md:hidden lg:hidden"
+        >
+          <div class="flex flex-col justify-center items-center">
+            <h2 class="text-[18px] text-white font-orbitron">V12</h2>
+            <p class="text-[18px] text-amber-400 font-orbitron">ENGINE</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <h2 class="text-[18px] text-white font-orbitron">
+              5987 <span class="text-amber-400"> CC</span>
+            </h2>
+            <p class="text-[18px] text-white font-orbitron">CAPACITY</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <h2 class="text-[18px] text-white font-orbitron">
+              375<span class="text-amber-400"> km/h</span>
+            </h2>
+            <p class="text-[18px] text-white font-orbitron">TOP SPEED</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <h2 class="text-[18px] text-white font-orbitron">
+              551<span class="text-amber-400"> KW</span>
+            </h2>
+            <p class="text-[18px] text-white font-orbitron">MAX POWER</p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-center items-start w-[95%] gap-4 mt-6 ml-1 md:w-[95%] lg:mt-0"
+        >
+          <p
+            class="text-gray-400 text-[16px] font-orbitron w-[100%] lg:text-[18px] md:w-[70%] lg:w-[40%]"
+          >
+            derived from the legendary CLK-GTR the naturally aspirated 6.0L V12
+            produces 750 HP.
+          </p>
+          <h3
+            class="text-white text-[18px] font-bold font-orbitron lg:text-[20px]"
+          >
+            Discover Engine<a href="#"
+              ><i
+                class="fa-solid fa-angle-right bg-white text-black text-[20px] px-2 py-1 rounded-[50%] ml-2 hover:text-black hover:bg-amber-400"
+              ></i
+            ></a>
+          </h3>
+        </div>
+      </div>
+      <!-- engine section completed for mobile  -->
+      <br />
+      <div id="performance"></div>
+      <div class="flex justify-center items-center mt-15 md:mt-20 lg:mt-20">
+        <h2
+          class="text-[25px] font-bold text-amber-400 font-orbitron text-center md:text-[35px] lg:text-[40px]"
+        >
+          TECHNICAL MASTERY
+        </h2>
+      </div>
+      <!-- --------------------------------->
+      <div class="mt-10 flex justify-center items-center lg:mt-15">
+        <h2
+          class="w-[90%] text-start text-[22px] text-amber-400 font-orbitron md:text-[24px] md:w-[85%] lg:text-[26px] lg:w-[80%]"
+        >
+          ENGINE
+        </h2>
+      </div>
+      <!------------------------------------>
+      <div class="flex flex-col justify-center items-center">
+        <div
+          class="w-[90%] mt-5 grid grid-cols-2 place-content-center gap-4 md:w-[85%] lg:w-[80%] lg:grid-cols-3"
+        >
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">CONFIGURATION</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              V12
+            </h2>
+          </div>
+          <!-- ----------------------------------->
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">DISPLACEMENT</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              6.0
+              <span
+                class="text-amber-400 text-[16px] md:text-[17px] lg:text-[18px]"
+                >L</span
+              >
+            </h2>
+          </div>
+          <!-- ------------------------>
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">POWER</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              750
+              <span
+                class="text-amber-400 text-[16px] md:text-[17px] lg:text-[18px]"
+                >HP</span
+              >
+            </h2>
+          </div>
+          <!------------------------->
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">TORQUE</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              710
+              <span
+                class="text-amber-400 text-[15px] md:text-[17px] lg:text-[18px]"
+                >NM</span
+              >
+            </h2>
+          </div>
+          <!-- ----------------------------->
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">REDLINE</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              7,500
+              <span
+                class="text-amber-400 text-[15px] md:text-[17px] lg:text-[18px]"
+                >RPM</span
+              >
+            </h2>
+          </div>
+          <!--------------------------->
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">ASPIRATION</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              NATURALLY ASPIRATED
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!----------------------------------->
+      <div class="mt-10 flex justify-center items-center lg:mt-15 w-[100%]">
+        <h2
+          class="w-[90%] text-start text-[22px] text-amber-400 font-orbitron md:text-[24px] md:w-[85%] lg:text-[26px] lg:w-[80%]"
+        >
+          PERFORMANCE
+        </h2>
+      </div>
+      <!------------------------------------>
+      <div class="flex flex-col justify-center items-center">
+        <div
+          class="w-[90%] mt-5 grid grid-cols-2 place-content-center gap-4 md:w-[85%] lg:w-[80%] lg:grid-cols-3"
+        >
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">0-100 KM/H</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              2.7
+              <span
+                class="text-amber-400 text-[15px] md:text-[17px] lg:text-[18px]"
+                >SEC</span
+              >
+            </h2>
+          </div>
+          <!-- ----------------------------------->
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[18px]">TOP SPEED</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              375
+              <span
+                class="text-amber-400 text-[15px] md:text-[17px] lg:text-[18px]"
+                >KM/H</span
+              >
+            </h2>
+          </div>
+          <!-------------------------->
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">LATERAL</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              1.25
+            </h2>
+          </div>
+          <!------------------------->
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">BRAKING</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              29.3
+              <span
+                class="text-amber-400 text-[15px] md:text-[17px] lg:text-[18px]"
+                >M</span
+              >
+            </h2>
+          </div>
+          <!-- ----------------------------->
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">
+              POWER TO WEIGHT
+            </p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              700
+              <span
+                class="text-amber-400 text-[15px] md:text-[17px] lg:text-[18px]"
+                >HP/TON</span
+              >
+            </h2>
+          </div>
+          <!--------------------------->
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">ARCHITECTURE</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              MONOCOQUE STRUCTURE
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!-------------------------------->
+      <div class="mt-10 flex justify-center items-center lg:mt-15">
+        <h2
+          class="w-[90%] text-start text-[22px] text-amber-400 font-orbitron md:text-[24px] md:w-[85%] lg:text-[26px] lg:w-[80%]"
+        >
+          CHASSIS
+        </h2>
+      </div>
+      <!------------------------------------>
+      <div class="flex flex-col justify-center items-center">
+        <div
+          class="w-[90%] mt-5 grid grid-cols-2 place-content-center gap-4 md:w-[85%] lg:w-[80%] lg:grid-cols-3"
+        >
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">CHASSIS</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              CARBON TITANIUM
+            </h2>
+          </div>
+          <!-- ----------------------------------->
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[18px]">WEIGHT</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              1070
+              <span
+                class="text-amber-400 text-[15px] md:text-[17px] lg:text-[18px]"
+                >KG</span
+              >
+            </h2>
+          </div>
+          <!-- ------------------------>
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">TRANSMISSION</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              6-SPEED SEQUENTIAL
+            </h2>
+          </div>
+          <!------------------------->
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">WHEELS</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              FORGED MAGNESIUM
+            </h2>
+          </div>
+          <!-- ----------------------------->
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">BRAKES</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              CARBON-CERAMIC
+            </h2>
+          </div>
+          <!--------------------------->
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">DRIVETRAIN</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              REAL WHEEL DRIVE
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!-------------------------------->
+      <div class="mt-10 flex justify-center items-center lg:mt-15">
+        <h2
+          class="w-[90%] text-start text-[22px] text-amber-400 font-orbitron md:text-[24px] md:w-[85%] lg:text-[26px] lg:w-[80%]"
+        >
+          DIMENSIONS
+        </h2>
+      </div>
+      <!------------------------------------>
+      <div class="flex flex-col justify-center items-center">
+        <div
+          class="w-[90%] mt-5 grid grid-cols-2 place-content-center gap-4 md:w-[85%] lg:w-[80%] lg:grid-cols-3"
+        >
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">OVERALL LENGTH</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              4,886
+              <span
+                class="text-amber-400 text-[15px] md:text-[17px] lg:text-[18px]"
+                >MM</span
+              >
+            </h2>
+          </div>
+          <!-- ----------------------------------->
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">OVERALL WIDTH</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              2,014
+              <span
+                class="text-amber-400 text-[15px] md:text-[17px] lg:text-[18px]"
+                >MM</span
+              >
+            </h2>
+          </div>
+          <!-- ------------------------>
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">OVERALL HEIGHT</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              1,141
+              <span
+                class="text-amber-400 text-[15px] md:text-[17px] lg:text-[18px]"
+                >MM</span
+              >
+            </h2>
+          </div>
+          <!------------------------->
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">WHEELBASE</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              2,730
+              <span
+                class="text-amber-400 text-[15px] md:text-[17px] lg:text-[18px]"
+                >MM</span
+              >
+            </h2>
+          </div>
+          <!-- ----------------------------------->
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[18px]">FRONT TRACK</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[22px] md:text-[26px] lg:text-[30px]"
+            >
+              1,651
+              <span
+                class="text-amber-400 text-[15px] md:text-[17px] lg:text-[18px]"
+                >MM</span
+              >
+            </h2>
+          </div>
+          <!------------------------->
+          <div class="bg-jetblack p-2 rounded-lg md:p-4 lg:p-6 overflow-hidden">
+            <p class="font-poppins text-gray-300 text-[16px]">REAR TRACK</p>
+            <h2
+              class="font-orbitron text-white font-bold text-[18px] md:text-[20px] lg:text-[24px]"
+            >
+              1,585
+              <span
+                class="text-amber-400 text-[15px] md:text-[17px] lg:text-[18px]"
+                >MM</span
+              >
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!-------------------------------->
+      <div class="flex justify-center items-center mt-20 md:mt-30 lg:mt-40">
+        <h2
+          class="text-[25px] font-bold text-amber-400 font-orbitron text-center md:text-[35px] lg:text-[40px]"
+        >
+          RACING DNA
+        </h2>
+      </div>
+      <!---------------------------------------------->
+      <div
+        class="flex flex-col justify-center items-center mt-10 md:mt-15 lg:mt-20"
+      >
+        <div
+          class="w-[90%] flex flex-col gap-5 md:w-[85%] lg:w-[80%] md:grid md:grid-cols-2 md:place-content-center md:place-items-center lg:grid lg:grid-cols-4 lg:place-content-center lg:place-items-center"
+        >
+          <div class="bg-jetblack p-4 flex flex-col gap-3 rounded-xl">
+            <h2
+              class="text-[18px] text-amber-400 font-orbitron md:text-[20px] lg:text-[22px]"
+            >
+              F1-DERIVED AIRBOX
+            </h2>
+            <p class="text-white text-[16px] font-poppins lg:text-[17px]">
+              Designed using Formula-1 intake principles to maximize airflow and
+              deliver instant throttle response at extreme RPM.
+            </p>
+          </div>
+          <!---------------->
+          <div class="bg-jetblack p-4 flex flex-col gap-3 rounded-xl">
+            <h2
+              class="text-[18px] text-amber-400 font-orbitron md:text-[20px] lg:text-[22px]"
+            >
+              PNEUMATIC PADDLE SHIFT
+            </h2>
+            <p class="text-white text-[16px] font-poppins lg:text-[17px]">
+              Race-grade pneumatic actuation enables llightning-fast seamless
+              gear changes without power interruption.
+            </p>
+          </div>
+          <!--------------->
+          <div class="bg-jetblack p-4 flex flex-col gap-3 rounded-xl">
+            <h2
+              class="text-[18px] text-amber-400 font-orbitron md:text-[20px] lg:text-[22px]"
+            >
+              INCONEL EXHAUST
+            </h2>
+            <p class="text-white text-[16px] font-poppins lg:text-[17px]">
+              Ultra-lightweight inconel exhaust system engineered for extreme
+              heat resistence and araw motosport sound.
+            </p>
+          </div>
+          <!--------------->
+          <div class="bg-jetblack p-4 flex flex-col gap-3 rounded-xl">
+            <h2
+              class="text-[18px] text-amber-400 font-orbitron md:text-[20px] lg:text-[22px]"
+            >
+              SEQUENTIAL GEARBOX
+            </h2>
+            <p
+              class="text-white text-[16px] font-poppins md:text-[17px] lg:text-[18px]"
+            >
+              Motosport-spec sequential transmission optimized for rapid shifts,
+              durability and uncompromised track performance.
+            </p>
+          </div>
+          <!------------------------>
+        </div>
+      </div>
+      <!------------------------------>
+      <br />
+      <br />
+      <div
+        class="flex justify-center items-center bg-red-500 mt-5 p-6 bg-gradient-to-r from-black to-black via-amber-400 md:p-8 md:mt-10 lg:p-10 lg:mt-15"
+      >
+        <button
+          class="bg-black text-amber-400 text-[16px] font-orbitron py-3 px-4 rounded-4xl md:text-[18px] md:py-4 md:px-5 lg:text-[20px] lg:py-5 lg:px-6"
+        >
+          <a href="#" class="decoration-0">CLAIM YOUR REWARD</a>
+        </button>
+      </div>
+      <!---------------------------------->
+      <br />
+      <br />
+      <div class="flex justify-center items-center lg:mt-15">
+        <div
+          class="lg:w-[90%] lg:flex lg:flex-row lg:justify-evenly lg:items-center"
+        >
+          <div class="flex flex-col justify-center items-center p-2 gap-2">
+            <h2
+              class="text-[18px] text-amber-400 font-orbitron md:text-[19px] lg:text-[20px]"
+            >
+              PAGANI
+            </h2>
+            <p
+              class="text-gray-300 text-[16px] w-[95%] text-center lg:text-justify"
+            >
+              Pagani Automobili blends italian design, advanced carbon fiber,and
+              race-derived performance to create exclusive hypercars
+            </p>
+          </div>
+          <!------------------->
+          <div
+            class="flex flex-row justify-around items-center mt-15 lg:gap-20 lg:mt-0 lg:px-15"
+          >
+            <div class="flex flex-col gap-1 p-2">
+              <h2
+                class="text-[16px] text-amber-400 font-orbitron md:text-[17px] lg:text-[18px]"
+              >
+                EXPLORE
+              </h2>
+              <p class="text-gray-300 text-[16px] w-[95%]">
+                <a href="#">Zonda</a>
+              </p>
+              <p class="text-gray-300 text-[16px] w-[95%]">
+                <a href="#">Huayra</a>
+              </p>
+              <p class="text-gray-300 text-[16px] w-[95%]">
+                <a href="#">Utopia</a>
+              </p>
+              <p class="text-gray-300 text-[16px] w-[95%]">
+                <a href="#">Imola</a>
+              </p>
+            </div>
+            <!--------------------------->
+            <div class="flex flex-col gap-1 p-2">
+              <h2
+                class="text-[16px] text-amber-400 font-orbitron md:text-[17px] lg:text-[18px]"
+              >
+                SUPPORT
+              </h2>
+              <p class="text-gray-300 text-[16px] w-[95%]">
+                <a href="#">Service</a>
+              </p>
+              <p class="text-gray-300 text-[16px] w-[95%]">
+                <a href="#">Warranty</a>
+              </p>
+              <p class="text-gray-300 text-[16px] w-[95%]">
+                <a href="#">Booking</a>
+              </p>
+              <p class="text-gray-300 text-[16px] w-[95%]">
+                <a href="#">Contact</a>
+              </p>
+            </div>
+          </div>
+          <!--------------------------->
+          <div
+            class="flex flex-col justify-center items-center w-[100%] gap-2 mt-15 lg:mt-0"
+          >
+            <h2
+              class="text-[16px] text-amber-400 font-orbitron md:text-[17px] lg:text-[18px]"
+            >
+              STAY UPDATED
+            </h2>
+            <form class="flex gap-2 justify-center w-[100%]">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="bg-jetblack text-gray-300 placeholder:text-[16px] w-[70%] lg:w-[60%] p-2 rounded-md focus:outline-0 focus:border-1 focus:border-amber-400/50"
+              />
+              <input
+                type="submit"
+                value="Submit"
+                class="text-black text-[16px] bg-amber-400 px-4 font-orbitron rounded-md"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+      <!------------------------------------->
+      <div class="mt-20 lg:mt-25">
+        <p
+          class="text-[15px] text-gray-300 text-center border-t-1 border-white/20 p-2 lg:p-3"
+        >
+          &#169; Immortal 2024, All Rights Reserved
+        </p>
+      </div>
+      <!---------------------------->
+    </div>
+    <!---------------------------------------------------->
+    <!---------------------------------------------------->
+  </body>
+</html>
