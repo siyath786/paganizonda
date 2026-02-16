@@ -2,4 +2,4 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://paganizonda-r/sitemap.xml
+Sitemap: https://paganizonda-r.vercel.app/sitemap.xml
